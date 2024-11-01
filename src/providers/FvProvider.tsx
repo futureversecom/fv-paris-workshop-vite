@@ -19,37 +19,10 @@ import {
 } from '@futureverse/auth-react';
 
 import type { NetworkName } from '@therootnetwork/api';
-import { AssetRegisterProvider } from './AssetRegisterProvider';
 
 const customTheme: ThemeConfig = {
   ...DefaultTheme,
   defaultAuthOption: 'custodial',
-  colors: {
-    primaryBackground: 'rgba(234, 88, 12, 1)',
-    primaryForeground: 'rgba(255, 255, 255, 1)',
-    primaryHover: 'rgba(15, 23, 42, 1)',
-    primaryActive: 'rgba(255, 255, 255, 0.2)',
-    primaryBackgroundDisabled: 'rgba(68, 68, 68, 1)',
-    primaryForegroundDisabled: 'rgba(165, 163, 164, 1)',
-    secondaryBackground: 'rgba(255, 255, 255, 0)',
-    secondaryForeground: 'rgba(15, 23, 42, 1)',
-    secondaryHover: 'rgba(255, 255, 255, 0)',
-    secondaryActive: 'rgba(255, 255, 255, 0.05)',
-    secondaryBackgroundDisabled: 'rgba(68, 68, 68, 1)',
-    secondaryForegroundDisabled: 'rgba(165, 163, 164, 1)',
-    border: 'rgba(234, 88, 12, 1)',
-    borderHover: 'rgba(15, 23, 42, 1)',
-    borderActive: 'rgba(255, 255, 255, 1)',
-    borderError: 'rgba(171, 21, 57, 1)',
-    errorForeground: 'rgba(171, 21, 57, 1)',
-    body: 'rgba(15, 23, 42, 1)',
-    muted: 'rgba(15, 23, 42, 1)',
-    surface: 'rgba(15, 23, 42, 0.09)',
-    page: 'rgba(24, 24, 24, 1)',
-  },
-  images: {
-    background: '/images/paris.jpg',
-  },
 };
 
 const network = (import.meta.env.VITE_NETWORK ?? 'porcini') as
@@ -72,11 +45,9 @@ export default function FutureverseProviders({
         >
           <FutureverseAuthProvider authClient={authClient}>
             <AuthUiProvider themeConfig={customTheme} authClient={authClient}>
-              <AssetRegisterProvider>
-                {children}
+              {children}
 
-                <ReactQueryDevtools initialIsOpen={false} />
-              </AssetRegisterProvider>
+              <ReactQueryDevtools initialIsOpen={false} />
             </AuthUiProvider>
           </FutureverseAuthProvider>
         </FutureverseWagmiProvider>
