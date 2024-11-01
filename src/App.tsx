@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import './App.css';
 import { Routes, Route, Outlet, Navigate } from 'react-router-dom';
 import Home from '@/components/Home';
@@ -5,9 +6,9 @@ import useIsAuthed from '@/hooks/useIsAuthed';
 import Header from '@/components/Header';
 import FutureverseProviders from '@/providers/FvProvider';
 import Login from '@/components/Login';
-import MintAccessories from '@/components/MintAccessories';
-import MyCollection from '@/components/MyCollection';
-import Mint from '@/components/Mint';
+// import MintAccessories from '@/components/MintAccessories';
+// import MyCollection from '@/components/MyCollection';
+// import Mint from '@/components/Mint';
 import { Toaster } from './components/ui/sonner';
 import { toast } from 'sonner';
 import { useEffect } from 'react';
@@ -19,30 +20,30 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route
+          {/* <Route
             path="/mint"
             element={
               <ProtectedRoute>
                 <Mint />
               </ProtectedRoute>
             }
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="/accessories"
             element={
               <ProtectedRoute>
                 <MintAccessories />
               </ProtectedRoute>
             }
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="/my-collection"
             element={
               <ProtectedRoute>
                 <MyCollection />
               </ProtectedRoute>
             }
-          />
+          /> */}
         </Route>
       </Routes>
     </FutureverseProviders>

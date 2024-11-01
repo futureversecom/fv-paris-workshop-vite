@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Link } from 'react-router-dom';
 import {
   NavigationMenu,
@@ -47,7 +48,7 @@ const InnerNavigation = ({
   return (
     <NavigationMenu>
       <NavigationMenuList className={classes}>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuLink
             asChild
             onClick={() => closeHandler && closeHandler(false)}
@@ -55,7 +56,8 @@ const InnerNavigation = ({
           >
             <Link to="/mint">Mint NFT</Link>
           </NavigationMenuLink>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
+        {/* 
         <NavigationMenuItem>
           <NavigationMenuLink
             onClick={() => closeHandler && closeHandler(false)}
@@ -65,6 +67,8 @@ const InnerNavigation = ({
             <Link to="/accessories">Mint Accessories</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        */}
+        {/* 
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
@@ -74,6 +78,7 @@ const InnerNavigation = ({
             <Link to="/my-collection">My Collection</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        */}
         <NavigationMenuItem>
           <Wallet />
         </NavigationMenuItem>
