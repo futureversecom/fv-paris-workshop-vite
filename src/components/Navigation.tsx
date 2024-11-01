@@ -56,6 +56,7 @@ const InnerNavigation = ({
             <Link to="/mint">Mint NFT</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        {/* 
         <NavigationMenuItem>
           <NavigationMenuLink
             onClick={() => closeHandler && closeHandler(false)}
@@ -65,6 +66,8 @@ const InnerNavigation = ({
             <Link to="/accessories">Mint Accessories</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        */}
+        {/* 
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
@@ -74,6 +77,7 @@ const InnerNavigation = ({
             <Link to="/my-collection">My Collection</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        */}
         <NavigationMenuItem>
           <Wallet />
         </NavigationMenuItem>
