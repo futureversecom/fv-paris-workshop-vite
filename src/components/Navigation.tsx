@@ -65,6 +65,7 @@ const InnerNavigation = ({
             <Link to="/accessories">Mint Accessories</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        {/* 
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
@@ -74,6 +75,7 @@ const InnerNavigation = ({
             <Link to="/my-collection">My Collection</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
+        */}
         <NavigationMenuItem>
           <Wallet />
         </NavigationMenuItem>

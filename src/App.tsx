@@ -6,7 +6,7 @@ import Header from '@/components/Header';
 import FutureverseProviders from '@/providers/FvProvider';
 import Login from '@/components/Login';
 import MintAccessories from '@/components/MintAccessories';
-import MyCollection from '@/components/MyCollection';
+// import MyCollection from '@/components/MyCollection';
 import Mint from '@/components/Mint';
 import { Toaster } from './components/ui/sonner';
 import { toast } from 'sonner';
@@ -35,14 +35,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route
+          {/* <Route
             path="/my-collection"
             element={
               <ProtectedRoute>
                 <MyCollection />
               </ProtectedRoute>
             }
-          />
+          /> */}
         </Route>
       </Routes>
     </FutureverseProviders>
